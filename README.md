@@ -19,4 +19,3 @@
 </body>
 </html>
 
-thêm ô và thêm màu sắc và icon cho page này
