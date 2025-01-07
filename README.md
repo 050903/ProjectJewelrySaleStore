@@ -1,97 +1,173 @@
-<<<<<<< HEAD
-# Jewelry Sales System At The Store
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!-- Đặt mã hóa ký tự -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Cấu hình để chạy trên các trình duyệt hiện đại -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Đảm bảo trang web hiển thị tốt trên mọi thiết bị -->
+        <meta name="description" content=""> <!-- Mô tả trang web -->
+        <title>Cửa Hàng Trang Sức</title> <!-- Tiêu đề của trang web -->
+
+        <!-- CSS -->
+        <!-- Kết nối với CSS của Bootstrap từ CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Liên kết đến các tệp CSS tùy chỉnh cho giao diện -->
+        <link href="{% static 'app/css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'app/css/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'app/css/all.min.css' %}" rel="stylesheet">
+        <!-- Kết nối thêm CSS của Bootstrap phiên bản cũ -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+        <!-- CSS chính của trang -->
+        <link rel="stylesheet" type="text/css" href="{% static 'app/css/main.css' %}">
+        <!-- Favicon của trang web -->
+        <link rel="icon" href="{% static 'app/images/favicon.ico' %}" type="image/x-icon">
+
+        <!-- JS -->
+        <!-- Kết nối với các thư viện JS cần thiết -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <!-- Kết nối các tệp JS tùy chỉnh -->
+        <script src="{% static 'app/js/s3.js' %}"></script>
+        <script src="{% static 'app/js/all.min.js' %}"></script>
+        <script src="{% static 'app/js/myscript.js' %}"></script>
+
+        <script type="text/javascript">
+            // Lấy thông tin người dùng từ server và gán vào biến user
+            var user = '{{ request.user }}';
+
+            // Hàm lấy giá trị cookie theo tên
+            function getCookie(name) {
+                let cookieValue = null;
+                if (document.cookie && document.cookie !== '') {
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        const cookie = cookies[i].trim();
+                        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+
+            // Lấy giá trị CSRF token từ cookie để bảo mật yêu cầu
+            const csrftoken = getCookie('csrftoken');
+        </script>
+
+        <style>
+            /* Các kiểu dáng cho các phần tử trong navbar */
+            .navbar .nav-link {
+                font-size: 20px;
+            }
+
+            .navbar .navbar-brand {
+                font-size: 25px;
+            }
+
+            .navbar .dropdown-menu .dropdown-item {
+                font-size: 21px;
+            }
+
+            .form-control {
+                font-size: 21px;
+            }
+
+            .btn-outline-success {
+                font-size: 21px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                
+                    <!-- Logo trang web -->
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'app/images/jewelrylogo.png' %}" id="logo" width="120" height="100" alt="Logo">
+                </a>
+                <!-- Nút điều hướng trên di động -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Danh sách các mục trên navbar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                        <!-- Mục Trang chủ -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'home' %}">Trang chủ</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Danh mục sản phẩm</a>
+                            <ul class="dropdown-menu">
+                                {% for category in categories %} 
+                                <li><a class="dropdown-item" href="{% url 'category' %}?category={{ category.slug }}">{{ category.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <!-- Mục giỏ hàng -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'cart' %}">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'contact' %}">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-right"> <!-- Thêm thẻ div này để căn chỉnh-->
+                        <!-- Form tìm kiếm -->
+                        <form class="d-flex" role="search" method = POST action = "{% url 'search' %}">
+                            {% csrf_token %}
+                            <input class="form-control me-2" type="search" placeholder="Nhập" aria-label="Search" name = "searched">
+                            <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                        </form>
 
 
+                        <!-- Mục Người dùng -->
+                         <div class="form-inline my-2 my-lg-0 {% if not user.is_authenticated %}d-none{% endif %}">
+                            <span> Xin chào! {{ request.user }}</span>
+                             <span><a href="{% url 'logout' %}">  Đăng xuất</a></span>
+                         </div>
+                    
+                    
+                    
+                         <div class="form-inline my-2 my-lg-0 {% if user.is_authenticated %}d-none{% endif %}">
+                              <a class="nav-link" href="{% url 'login' %}">Đăng nhập</a>
+                              <a class="nav-link" href="{% url 'register' %}">Đăng ký</a>
+                          </div>
 
-## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+                        <!-- Mục Logo Giỏ hàng -->
+                         <div class="form-inline my-2 my-lg-0 d-flex align-items-center">
+                                <a href="{% url 'cart' %}" class="cart-link">
+                                   <img id="cart-icon" class="img-fluid" style="width: 50px;" src="{% static 'images/shoppingcart.png' %}" alt="Cart Icon">
+                                </a>
+                                <p id="cart-total" class="fs-8 ms-0">{{ cartItems }}</p>
+                         </div>
+                       </div>
+                    
+                </div>
+            </div>
+        </nav>
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+        <!-- Các block nội dung trang web -->
+        {% block banner_slider %}{% endblock banner_slider %}
+        {% block main-content %}{% endblock main-content %}
+        <!--giao diện cart-->
+        {% block cart_content %}{% endblock cart_content %}
+        {% block content_checkout %}{% endblock content_checkout %}
+        {% block register %}{% endblock register %}
+    
 
-## Add your files
+        <!-- Footer -->
+        <footer class="container-fluid bg-success text-center fixed-bottom p-2 mt-5">
+            Phiên bản bản quyền 2024
+        </footer>
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/050903tth/jewelry-sales-system-at-the-store.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/050903tth/jewelry-sales-system-at-the-store/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
-=======
-# jewelrysalestore
->>>>>>> 99ed90a752fc161dcd2813bedca840e85774b72f
+        <!-- Kết nối JavaScript cho giỏ hàng -->
+        <script src="{% static 'app/js/cart.js' %}"></script>
+    </body>
+</html>
