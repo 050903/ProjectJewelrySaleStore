@@ -1,15 +1,16 @@
-# Jewelry Sales Store
+# Cửa hàng trang sức
 
-Welcome to our jewelry store! Here you can find a wide variety of beautifully crafted jewelry pieces.
+Chào mừng bạn đến với cửa hàng trang sức của chúng tôi! 
+## Phân Loại:
+- Chất lượng cao
+- Mẫu mã độc đáo
+- Nhập khẩu quốc tế
 
-## Features:
-- High-quality materials
-- Free shipping
-- Easy returns
-
-## Installation:
+## Cài đặt:
 1. Clone the repository.
-2. Run the project using `npm start`.
+2. Mở thư mục dự án
+3. Kích hoạt môi trường ảo
+4. Chạy python manage.py runserver
 
-## Contact:
-For inquiries, email us at: info@jewelrystore.com
+## Liên hệ:
+email: info@jewelrystore.com
