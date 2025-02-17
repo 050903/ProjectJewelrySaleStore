@@ -1,3 +1,4 @@
+# TRÂN TRỌNG VÀ CẢM ƠN THẦY NGUYỄN VĂN CHIẾN ĐÃ HỖ TRỢ CHÚNG EM TRONG SUỐT QUÁ TRÌNH HỌC TẬP VỪA QUA
 # Hệ Thống Quản Lý Cửa Hàng Trang Sức
 
 ## Giới Thiệu
@@ -8,13 +9,13 @@ Hệ thống này là một nền tảng thương mại điện tử tiên tiế
 
 ### Công nghệ nền tảng: Ứng dụng các tiêu chuẩn lập trình tiên tiến với tỷ lệ phân bổ công nghệ như sau:
 
-HTML: 54.1% (giao diện người dùng và bố cục trình bày trực quan)
+HTML:  (giao diện người dùng và bố cục trình bày trực quan)
 
-Python: 31.6% (logic nghiệp vụ, quản lý dữ liệu, và xử lý backend)
+Python:  (logic nghiệp vụ, quản lý dữ liệu, và xử lý backend)
 
-CSS: 9.5% (tùy chỉnh giao diện và trải nghiệm người dùng)
+CSS:  (tùy chỉnh giao diện và trải nghiệm người dùng)
 
-JavaScript: 4.8% (tương tác động và xử lý phía client)
+JavaScript:  (tương tác động và xử lý phía client)
 
 ### Chức Năng Hệ Thống
 
@@ -81,3 +82,16 @@ Website: https://jewelrystore.com
 Hotline: 0123-456-789
 
 Chúng tôi đánh giá cao sự quan tâm của bạn đối với hệ thống và mong muốn mang đến trải nghiệm mua sắm trang sức trực tuyến tốt nhất!
+# Preview
+![image](https://github.com/user-attachments/assets/2cbc134e-0237-4ae9-ae8d-77865f05aed7)
+![image](https://github.com/user-attachments/assets/a0714341-0bdd-414c-bdfb-363428f34950)
+![image](https://github.com/user-attachments/assets/d88d8489-81a9-4c2e-ba92-d223018b8bd9)
+![image](https://github.com/user-attachments/assets/47ccc05e-f6b5-4e2d-969c-b03850f0230f)
+![image](https://github.com/user-attachments/assets/ac913054-0eb2-4246-a24f-9bc9d33b41a6)
+![image](https://github.com/user-attachments/assets/b0e425cf-1d67-46db-8175-c28a8c005908)
+
+
+
+
+
+
