@@ -1,94 +1,125 @@
-# TRÂN TRỌNG VÀ CẢM ƠN THẦY NGUYỄN VĂN CHIẾN ĐÃ HỖ TRỢ CHÚNG EM TRONG SUỐT QUÁ TRÌNH HỌC TẬP VỪA QUA
 # Hệ Thống Quản Lý Cửa Hàng Trang Sức
+
+## "TRÂN TRỌNG VÀ CẢM ƠN THẦY NGUYỄN VĂN CHIẾN ĐÃ HỖ TRỢ CHÚNG EM TRONG SUỐT QUÁ TRÌNH HỌC TẬP VỪA QUA"
 
 ## Giới Thiệu
 
+💎 Hệ Thống Thương Mại Điện Tử Trang Sức Cao Cấp
 Hệ thống này là một nền tảng thương mại điện tử tiên tiến, chuyên phục vụ lĩnh vực kinh doanh trang sức cao cấp. Mục tiêu của hệ thống là cung cấp một giải pháp toàn diện cho việc quản lý sản phẩm, quy trình bán hàng, và trải nghiệm mua sắm trực tuyến tối ưu.
 
-## Đặc Điểm Nổi Bật
+✨ Đặc Điểm Nổi Bật
+🖥️ Công nghệ nền tảng
+Ứng dụng các tiêu chuẩn lập trình tiên tiến với tỷ lệ phân bổ công nghệ như sau:
 
-### Công nghệ nền tảng: Ứng dụng các tiêu chuẩn lập trình tiên tiến với tỷ lệ phân bổ công nghệ như sau:
+🧩 HTML: (Giao diện người dùng và bố cục trình bày trực quan)
 
-HTML:  (giao diện người dùng và bố cục trình bày trực quan)
+🐍 Python: (Logic nghiệp vụ, quản lý dữ liệu, và xử lý backend)
 
-Python:  (logic nghiệp vụ, quản lý dữ liệu, và xử lý backend)
+🎨 CSS: (Tùy chỉnh giao diện và trải nghiệm người dùng)
 
-CSS:  (tùy chỉnh giao diện và trải nghiệm người dùng)
+⚙️ JavaScript: (Tương tác động và xử lý phía client)
 
-JavaScript:  (tương tác động và xử lý phía client)
+⚙️ Chức Năng Hệ Thống
+📦 Quản lý danh mục sản phẩm: Giao diện quản trị với khả năng tìm kiếm nâng cao, phân loại theo tiêu chí.
 
-### Chức Năng Hệ Thống
+🧾 Xử lý đơn hàng: Xác thực, theo dõi và cập nhật trạng thái đơn hàng theo thời gian thực.
 
-Quản lý danh mục sản phẩm: Cung cấp giao diện quản trị với khả năng tìm kiếm nâng cao, phân loại theo tiêu chí cụ thể.
+🛒 Giỏ hàng & thanh toán: Giao dịch an toàn qua cổng thanh toán BIDV.
 
-Xử lý đơn hàng: Tích hợp quy trình xác thực, theo dõi, và cập nhật trạng thái đơn hàng theo thời gian thực.
+🎁 Chương trình khuyến mãi: Cơ chế phê duyệt và áp dụng ưu đãi linh hoạt.
 
-Tích hợp giỏ hàng và thanh toán: Hỗ trợ giao dịch an toàn và bảo mật thông qua cổng thanh toán BIDV.
+🖥️ Yêu Cầu Hệ Thống
+💻 Môi trường phát triển: Python 3.x, Django Framework
 
-Quản lý chương trình khuyến mãi: Cơ chế phê duyệt và áp dụng ưu đãi linh hoạt.
+🗄️ Cơ sở dữ liệu: SQLite hoặc PostgreSQL
 
-### Yêu Cầu Hệ Thống
+📦 Môi trường ảo hóa: Khuyến nghị dùng virtual environment để quản lý thư viện
 
-Môi trường phát triển: Python 3.x, Django Framework.
-
-Cơ sở dữ liệu hỗ trợ: SQLite hoặc PostgreSQL.
-
-Môi trường ảo hóa: Khuyến nghị sử dụng virtual environment để quản lý phụ thuộc.
-
-## Hướng Dẫn Triển Khai
-
-### Bước 1: Sao Chép Mã Nguồn
+🚀 Hướng Dẫn Triển Khai
+🔁 Bước 1: Sao Chép Mã Nguồn
 
 git clone https://github.com/your-repo/jewelry-store.git
-cd jewelry-store
 
-### Bước 2: Cấu Hình Môi Trường
+cd jewelry-store
+🧰 Bước 2: Cấu Hình Môi Trường
 
 python -m venv django_venv
 source django_venv/bin/activate  # macOS/Linux
-django_venv\Scripts\activate  # Windows
+django_venv\Scripts\activate     # Windows
+📦 Bước 3: Cài Đặt Thư Viện Phụ Thuộc
 
-### Bước 3: Cài Đặt Thư Viện Phụ Thuộc
 
 pip install -r requirements.txt
+🚦 Bước 4: Khởi Chạy Hệ Thống
 
-### Bước 4: Khởi Chạy Hệ Thống
-
+Chỉnh sửa
 python manage.py migrate
 python manage.py runserver
+🧭 Hướng Dẫn Sử Dụng
+🌐 Truy cập: http://127.0.0.1:8000/
 
-## Hướng Dẫn Sử Dụng
+🧑 Đăng ký hoặc đăng nhập
 
-Truy cập giao diện thông qua http://127.0.0.1:8000/.
+🔍 Tìm kiếm và chọn sản phẩm
 
-Đăng ký tài khoản hoặc đăng nhập bằng thông tin người dùng.
+🛒 Thêm vào giỏ hàng, thanh toán
 
-Tìm kiếm và lựa chọn sản phẩm theo danh mục.
+📬 Theo dõi trạng thái đơn hàng
 
-Thêm sản phẩm vào giỏ hàng và hoàn tất thanh toán.
+🤝 Đóng Góp & Phát Triển
+Chúng tôi khuyến khích sự tham gia từ cộng đồng:
 
-Theo dõi tình trạng đơn hàng qua hệ thống quản lý.
+🔱 Fork repository
 
-## Đóng Góp & Phát Triển
+🔧 Gửi pull request
 
-### Chúng tôi khuyến khích sự tham gia từ cộng đồng để cải thiện và mở rộng hệ thống. Hãy fork repository và gửi pull request để đóng góp vào dự án.
+📢 Góp ý & đề xuất tính năng mới
 
-## Liên Hệ & Hỗ Trợ
+📞 Liên Hệ & Hỗ Trợ
+📧 Email: info@jewelrystore.com
 
-Email: info@jewelrystore.com
+🌐 Website: jewelrystore.com
 
-Website: https://jewelrystore.com
-
-Hotline: 0123-456-789
-
-Chúng tôi đánh giá cao sự quan tâm của bạn đối với hệ thống và mong muốn mang đến trải nghiệm mua sắm trang sức trực tuyến tốt nhất!
+☎️ Hotline: 0123-456-789(demo)
 # Preview
-![image](https://github.com/user-attachments/assets/2cbc134e-0237-4ae9-ae8d-77865f05aed7)
-![image](https://github.com/user-attachments/assets/a0714341-0bdd-414c-bdfb-363428f34950)
-![image](https://github.com/user-attachments/assets/d88d8489-81a9-4c2e-ba92-d223018b8bd9)
-![image](https://github.com/user-attachments/assets/47ccc05e-f6b5-4e2d-969c-b03850f0230f)
-![image](https://github.com/user-attachments/assets/ac913054-0eb2-4246-a24f-9bc9d33b41a6)
-![image](https://github.com/user-attachments/assets/b0e425cf-1d67-46db-8175-c28a8c005908)
+Đăng ký 
+![image](https://github.com/user-attachments/assets/86a6cfb4-1b68-401b-a3f6-556e9a267bbc)
+Đăng nhập
+![image](https://github.com/user-attachments/assets/92fa1a8c-2a53-4a84-a8e9-241e8624f4bf)
+Jewelry Store Wellcome
+![image](https://github.com/user-attachments/assets/912f3298-3b15-4fe8-a94e-27a7e884a725)
+Backgound
+![image](https://github.com/user-attachments/assets/d267a787-13ce-4f4f-a4ae-cbfc873b19b4)
+Trang chủ
+![image](https://github.com/user-attachments/assets/0564caf4-feee-4857-a5dc-3d48ea3ed63c)
+![image](https://github.com/user-attachments/assets/5dee116f-3a3e-4a07-9e59-ee825cf6105a)
+![image](https://github.com/user-attachments/assets/f0d98f19-0185-4b06-861a-bfc46b6254a1)
+![image](https://github.com/user-attachments/assets/c8963b53-2d6c-43fa-908a-e915008d6040)
+Danh mục sản phẩm
+![image](https://github.com/user-attachments/assets/76e06175-b22e-4315-b0e1-916a9eb819e9)
+![image](https://github.com/user-attachments/assets/e88d7e13-2646-424c-af8a-8d1c56e539a0)
+![image](https://github.com/user-attachments/assets/73e26e86-3b26-4bb4-aca2-aa747e2be6fc)
+![image](https://github.com/user-attachments/assets/f6d932ca-0ec4-4383-a4ac-546d568fe31b)
+Thêm vào giỏ 
+![image](https://github.com/user-attachments/assets/a185d0ca-7ace-44f1-b6ef-69bfa8427721)
+Giỏ hàng
+![image](https://github.com/user-attachments/assets/7072a24d-373e-4b1d-92cf-d6e18a62376e)
+Liên hệ
+![image](https://github.com/user-attachments/assets/544b653a-da9f-402d-9a6d-494028f36043)
+Tìm kiếm 
+![image](https://github.com/user-attachments/assets/1eb8cba4-fb7a-4fab-a16b-a616f53e10b7)
+Thông tin sản phẩm
+![image](https://github.com/user-attachments/assets/e6ac8a0f-3fd3-4899-8668-481b0ab0ac49)
+
+
+
+
+
+
+
+
+
+
 
 
 
