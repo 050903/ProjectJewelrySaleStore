@@ -86,6 +86,7 @@ Chúng tôi khuyến khích sự tham gia từ cộng đồng:
                         💎 Jewelry Store Web Application
                              
                               🔐 Đăng ký (Register) 
+                              
 ![image](https://github.com/user-attachments/assets/86a6cfb4-1b68-401b-a3f6-556e9a267bbc)
                             
                               🔓 Đăng nhập (Login)
@@ -106,7 +107,9 @@ Chúng tôi khuyến khích sự tham gia từ cộng đồng:
 ![image](https://github.com/user-attachments/assets/5dee116f-3a3e-4a07-9e59-ee825cf6105a)
 ![image](https://github.com/user-attachments/assets/f0d98f19-0185-4b06-861a-bfc46b6254a1)
 ![image](https://github.com/user-attachments/assets/c8963b53-2d6c-43fa-908a-e915008d6040)
+                      
                       📂 Danh mục sản phẩm (Product Categories)
+                      
 ![image](https://github.com/user-attachments/assets/76e06175-b22e-4315-b0e1-916a9eb819e9)
 ![image](https://github.com/user-attachments/assets/e88d7e13-2646-424c-af8a-8d1c56e539a0)
 ![image](https://github.com/user-attachments/assets/73e26e86-3b26-4bb4-aca2-aa747e2be6fc)
@@ -134,7 +137,9 @@ Chúng tôi khuyến khích sự tham gia từ cộng đồng:
 
 ## 👨‍💻 Author
 Trần Thế Hảo
+
 #🎓 Information Technology, University of Transport Ho Chi Minh City (UTH)
+
 ![image](https://github.com/user-attachments/assets/c2488ba6-05d8-40dd-b8c6-ff3db7cf8cf5)
 
 
