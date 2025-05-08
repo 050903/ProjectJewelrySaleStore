@@ -82,16 +82,26 @@ Chúng tôi khuyến khích sự tham gia từ cộng đồng:
 
 ☎️ Hotline: 0123-456-789(demo)
 # Preview
+                        
                         💎 Jewelry Store Web Application
+                             
                               🔐 Đăng ký (Register) 
 ![image](https://github.com/user-attachments/assets/86a6cfb4-1b68-401b-a3f6-556e9a267bbc)
+                            
                               🔓 Đăng nhập (Login)
+                              
 ![image](https://github.com/user-attachments/assets/92fa1a8c-2a53-4a84-a8e9-241e8624f4bf)
+                          
                           🏪 Jewelry Store Welcome Page
+                          
 ![image](https://github.com/user-attachments/assets/912f3298-3b15-4fe8-a94e-27a7e884a725)
+                                
+                                
                                 🌆 Background
 ![image](https://github.com/user-attachments/assets/d267a787-13ce-4f4f-a4ae-cbfc873b19b4)
+                          
                           🏠 Trang chủ (Homepage)
+                          
 ![image](https://github.com/user-attachments/assets/0564caf4-feee-4857-a5dc-3d48ea3ed63c)
 ![image](https://github.com/user-attachments/assets/5dee116f-3a3e-4a07-9e59-ee825cf6105a)
 ![image](https://github.com/user-attachments/assets/f0d98f19-0185-4b06-861a-bfc46b6254a1)
@@ -101,15 +111,25 @@ Chúng tôi khuyến khích sự tham gia từ cộng đồng:
 ![image](https://github.com/user-attachments/assets/e88d7e13-2646-424c-af8a-8d1c56e539a0)
 ![image](https://github.com/user-attachments/assets/73e26e86-3b26-4bb4-aca2-aa747e2be6fc)
 ![image](https://github.com/user-attachments/assets/f6d932ca-0ec4-4383-a4ac-546d568fe31b)
+                        
                         ➕ Thêm vào giỏ (Add to Cart) 
+                        
 ![image](https://github.com/user-attachments/assets/a185d0ca-7ace-44f1-b6ef-69bfa8427721)
+                             
                               🛍️ Giỏ hàng (Cart)
+                              
 ![image](https://github.com/user-attachments/assets/7072a24d-373e-4b1d-92cf-d6e18a62376e)
+                              
                               📞 Liên hệ (Contact)
+                              
 ![image](https://github.com/user-attachments/assets/544b653a-da9f-402d-9a6d-494028f36043)
+                             
                               🔍 Tìm kiếm (Search)
+                              
 ![image](https://github.com/user-attachments/assets/1eb8cba4-fb7a-4fab-a16b-a616f53e10b7)
+                     
                       ℹ️ Thông tin sản phẩm (Product Information)
+                      
 ![image](https://github.com/user-attachments/assets/e6ac8a0f-3fd3-4899-8668-481b0ab0ac49)
 
 ## 👨‍💻 Author
